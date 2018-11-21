@@ -1,0 +1,27 @@
+<assembly>
+	<id>frontend</id>
+	<formats>
+		<format>zip</format>
+	<formats>
+	<includeBaseDirectory>true</includeBaseDirectory>
+	<fileSets>
+		<!--配置运行express部署需要的依赖-->
+		<fileSet>
+			<outputDirectory>node_modules</outputDirectory>
+			<directory>./node_modules</directory>
+		</fileSet>
+		<!--配置react工程的静态文件-->
+		<fileSet>
+			<outputDirectory>build</outputDirectory>
+			<directory>./build</directory>
+		</fileSet>
+		<fileSet>
+			<outputDirectory>/</outputDirectory>
+			<directory>/</directory>
+			<includes>
+				<include>server.js</include>
+				<include>startup.bat</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>

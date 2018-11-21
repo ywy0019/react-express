@@ -1,0 +1,3 @@
+使用react-create-app创建工程，使用npm run build进行打包产生静态文件夹build，将build和该目录下的文件一起打包，
+使用server.js启动服务，进行react工程的部署，运行 node命令执行
+express进行静态文件的读取，proxy进行服务的转发
