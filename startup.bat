@@ -11,4 +11,4 @@ shift
 goto getArg
 
 :main
-node startup.js
+node server.js
